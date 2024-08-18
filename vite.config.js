@@ -24,6 +24,7 @@ export default defineConfig({
       input: {
         // 首頁須使用main作為命名，指向index.html，其他依照檔名即可
         main: resolve(__dirname, "index.html"),
+        news: resolve(__dirname, "news.html"),
       },
       output: {
         /* 

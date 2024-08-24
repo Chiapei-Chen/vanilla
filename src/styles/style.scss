@@ -2,7 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-:root {
+@import "products.scss";
+:root{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -95,5 +96,52 @@ ul.keyword{
             background-color: rgb(110, 164, 69);
             color: white;
         }
+    }
+}
+.infinity-menu{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    width: 180px;
+    li{
+        position: relative;
+        padding: 10px 20px;
+        background-color: #242424;
+        color: #ebebeb;
+        cursor: pointer;
+        &:hover{
+            background-color: #ff7e7e;
+            &>ul{
+                display: block;
+            }
+        }
+        ul{
+            display: none;
+            position: absolute;
+            left: 100%;
+            top:0;
+            list-style:none;
+            padding: 0;
+            margin: 0;
+            min-width: 150px;
+            background-color: #333;
+        }
+    }
+}
+.dice{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #242424;
+    .point{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width: 40px;
+        height: 40px;
+        //margin: -20px 0 0 -20px;
+        transform: translate(-50%,-50%);
+        background-color: #f90;
+        border-radius: 50%;
     }
 }

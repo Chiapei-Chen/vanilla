@@ -4,14 +4,101 @@
 
 .container.products{
     max-width: 1300px;
-    .dice{
-        @apply relative w-[100px] h-[100px] bg-slate-500;
-        .point{
-          @apply absolute top-1/2 left-1/2 
-          w-[20px] h-[20px] bg-[#fffcfd] rounded-full;
-        } 
+        .products-dice{
+        @apply relative w-[100px] h-[100px] bg-[black] ;
+        //1
+        .products-dice__onepoint{
+          @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+          top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2;
+        }
+        //2
+        .products-dice__secondpoint:nth-child(1){
+          @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+          top-[15%] left-[15%] ;
+        }
+        .products-dice__secondpoint:nth-child(2){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] right-[15%] ;
+        }
+        //3
+        .products-dice__thirdpoint:nth-child(1){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] left-[15%] ;
+        }
+        .products-dice__thirdpoint:nth-child(2){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+          top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2;
+        }
+        .products-dice__thirdpoint:nth-child(3){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[65%] left-[65%] ;
+        }
+        //4
+        .products-dice__forthpoint:nth-child(1){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] left-[15%];
+        }
+        .products-dice__forthpoint:nth-child(2){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] right-[15%] ;
+        }
+        .products-dice__forthpoint:nth-child(3){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] left-[15%] ;
+        }
+        .products-dice__forthpoint:nth-child(4){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] right-[15%] ;
+        }
+        //5
+        .products-dice__fifthpoint:nth-child(1){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] left-[15%];
+        }
+        .products-dice__fifthpoint:nth-child(2){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] right-[15%] ;
+        }
+        .products-dice__fifthpoint:nth-child(3){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2;
+             
+        }
+        .products-dice__fifthpoint:nth-child(4){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] left-[15%]; ;
+        }
+        .products-dice__fifthpoint:nth-child(5){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] right-[15%];
+        }
+        //6
+        .products-dice__sixthpoint:nth-child(1){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] left-[15%];
+        }
+        .products-dice__sixthpoint:nth-child(2){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[15%] right-[15%] ;
+        }
+        .products-dice__sixthpoint:nth-child(3){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            top-[40%] left-[15%] ;        
+        }
+        .products-dice__sixthpoint:nth-child(4){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[40%] right-[15%]; 
+        }
+        .products-dice__sixthpoint:nth-child(5){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] left-[15%];
+        }
+        .products-dice__sixthpoint:nth-child(6){
+            @apply absolute w-[20px] h-[20px] bg-[red] rounded-full
+            bottom-[15%] right-[15%];
+        }
       }
-  }
+ }
 .product-list{
     @apply flex flex-wrap justify-between mt-4 gap-2;
 }

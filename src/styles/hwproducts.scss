@@ -102,9 +102,11 @@
 .product-list{
     @apply flex flex-wrap justify-between mt-4 gap-2;
 }
+
 .product-card{
+    background: rgba(235, 230, 230, 0.8);
     @apply p-4 mb-4 w-60 border border-[#333] cursor-pointer
-           rounded-md backdrop-blur-[10px] bg-[rgba(210,208,208,0.8)];
+           rounded-md backdrop-blur-[10px] ;
      &__name{
         @apply text-black text-base;
         display: -webkit-box;

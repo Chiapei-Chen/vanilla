@@ -27,6 +27,7 @@ export default defineConfig({
         news: resolve(__dirname, "news.html"),
         products: resolve(__dirname, "products.html"),
         hwproducts: resolve(__dirname, "hwproducts.html"),
+        gridProducts: resolve(__dirname, "gridproducts.html"),
       },
       output: {
         /* 

@@ -27,7 +27,7 @@
     width: 100%;
     height: 80px;
     //backdrop-filter:blur(10px)毛玻璃 ;
-    background-color: rgba(129, 110, 110, 0.2);
+    background-color: rgba(6, 6, 6, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,6 +41,44 @@
                 color: #f90;
             }
         }
+    }
+    .mobile-menu__btn{
+        position:absolute;
+        right:1rem;
+        top:50%;
+        transform: translateY(-50%);
+        width:44px;
+        height:44px;
+        cursor: pointer;
+        background: url('img/mobile_menu_btn.svg') no-repeat center center;
+        background-size: 24px;
+    }
+}
+
+.mobile-menu__mask{
+    display: none;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    height:100%;
+    backdrop-filter: blur(10px);
+    &.is-open{
+        display: block;
+    }
+}
+
+.mobile-menu__panel{
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 99;
+    width:300px;
+    height:100%;
+    background-color: #333;
+    transform: translateX(100%);
+    &.is-open{
+        transform: translateX(0);
+        transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
     }
 }
 h1{
@@ -130,6 +168,7 @@ ul.keyword{
         }
     }
 }
+
 .dice{
     position: relative;
     width: 200px;

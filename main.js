@@ -39,4 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('mobileMaskClick');
   })
 
+//cosmetic 
+const mobilebtn=document.getElementById('cosmeticmenu-mobile__btn');
+  mobilebtn.addEventListener('click',()=>{
+  const cosmeticpanel=document.getElementById('cosmeticmenu-mobile__panel');
+  cosmeticpanel.classList.toggle('is-open');
+  console.log('costmeticMenuClick');
+
+
+})
 

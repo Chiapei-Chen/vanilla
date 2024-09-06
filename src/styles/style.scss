@@ -1,10 +1,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+@import "cosmetic.scss";
 @import "products.scss";
 @import "hwproducts.scss";
 @import "grid-products.scss";
+
 :root{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -40,6 +41,7 @@
             &:hover{
                 color: #f90;
             }
+            
         }
     }
     .mobile-menu__btn{

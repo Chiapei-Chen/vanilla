@@ -23,21 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   //手機選單點擊事件
-  const mobileMenu=document.getElementById('mobile-menu-btn');
-  const mobileMenuMask=document.getElementById('mobile-menu-mask');
-  mobileMenu.addEventListener('click',()=>{
-    const panel=document.getElementById('mobile-menu-panel');
-    panel.classList.toggle('is-open');
-    mobileMenuMask.classList.toggle('is-open');
-    console.log('mobileMenuClick');
-  })
+  // const mobileMenu=document.getElementById('mobile-menu-btn');
+  // const mobileMenuMask=document.getElementById('mobile-menu-mask');
+  // mobileMenu.addEventListener('click',()=>{
+  //   const panel=document.getElementById('mobile-menu-panel');
+  //   panel.classList.toggle('is-open');
+  //   mobileMenuMask.classList.toggle('is-open');
+  //   console.log('mobileMenuClick');
+  // })
   
-  mobileMenuMask.addEventListener('click',()=>{
-    const panel=document.getElementById('mobile-menu-panel');
-    panel.classList.remove('is-open');
-    mobileMenuMask.classList.remove('is-open');
-    console.log('mobileMaskClick');
-  })
+  // mobileMenuMask.addEventListener('click',()=>{
+  //   const panel=document.getElementById('mobile-menu-panel');
+  //   panel.classList.remove('is-open');
+  //   mobileMenuMask.classList.remove('is-open');
+  //   console.log('mobileMaskClick');
+  // })
 
 //cosmetic 
 const mobilebtn=document.getElementById('cosmeticmenu-mobile__btn');

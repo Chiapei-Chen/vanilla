@@ -138,8 +138,8 @@ body{
         // 產品區
         .cosmeticblock-productlist{
             display: grid;
-         //   grid-template-columns: auto auto auto auto;
-            grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+           grid-template-columns: auto auto auto auto;
+          //  grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
             column-gap: 10px;
             .cosmeticblock-productlist-card{
                 .cosmeticblock-productlist-card__name{
@@ -261,15 +261,27 @@ body{
             padding: 20px 0;
         }
 }
-}     
+} 
+@media screen and (max-width:660px){
+    .cosmetic-container
+    .cosmetic-outer
+    .cosmeticblock-productlist{
+        grid-template-columns: auto auto; 
+    }
+}
+@media screen and (max-width:480px) {
+    .cosmetic-container
+    .cosmetic-outer
+    .cosmeticblock-productlist{
+        grid-template-columns: auto; 
+    }
+}
 @media screen and (max-width: 600px){  
     .cosmetic-container
     .cosmetic-outer
-    .cosmeticblock-event{
-       
+    .cosmeticblock-event{   
             flex-direction: column;
-            width: 100%;
-        
-       
+            width: 100%;      
     }
 }
+

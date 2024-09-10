@@ -73,7 +73,9 @@
             flex-direction: row;
             width: 100%;
             box-sizing: border-box;
-         
+            .cosmeticblock-event-img__first{         
+             margin-right: 2%;     
+            }
         }
         .cosmeticblock-tab{
             display: flex;
@@ -195,7 +197,7 @@
                     border: 1px solid #999;
                     color: #666;
                     width: 58.05px;
-                    padding: 10px;
+
                     height: 37px;
                  }
                  
@@ -236,7 +238,7 @@
                     list-style: none;
                     li{
                         margin-right: 1.5rem;
-                        font-size: 0.9rem;
+                        font-size: 0.8em;
                         &:hover{
                             border-bottom: 1px solid red;
                         }
@@ -373,6 +375,13 @@
     .cosmetic-outer
     .cosmeticblock-productlist{
         grid-template-columns: auto; 
+        .cosmeticblock-productlist-card{
+            display: flex;
+            img{
+                width: 40%;
+                margin-right: 2%;
+            }
+        }
     }
 
 }
@@ -381,7 +390,10 @@
     .cosmetic-outer
     .cosmeticblock-event{   
             flex-direction: column;
-            width: 100%;      
+            width: 100%;   
+            img{
+              margin:  15px 0;
+            }   
     }
    .cosmeticfooter
    .cosmeticfooter-list{

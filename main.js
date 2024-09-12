@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   
-  //手機選單點擊事件
+  // 手機選單點擊事件
   // const mobileMenu=document.getElementById('mobile-menu-btn');
   // const mobileMenuMask=document.getElementById('mobile-menu-mask');
   // mobileMenu.addEventListener('click',()=>{
@@ -45,7 +45,5 @@ const mobilebtn=document.getElementById('cosmeticmenu-mobile__btn');
   const cosmeticpanel=document.getElementById('cosmeticmenu-mobile__panel');
   cosmeticpanel.classList.toggle('is-open');
   console.log('costmeticMenuClick');
-
-
 })
 

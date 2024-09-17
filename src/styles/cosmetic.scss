@@ -18,13 +18,13 @@
     display: flex;
 
     flex-direction: row;
-    .banner-img {
+    .cosmetic-banner__img {
       width: 50%;
       img {
         width: 100%;
       }
     }
-    .banner-info {
+    .cosmetic-banner__info {
       position: relative;
       top: 50px;
       left: 55px;
@@ -39,7 +39,7 @@
         letter-spacing: 0.8rem;
         margin-bottom: 1.5rem;
       }
-      .banner-info__btn {
+      .cosmetic-banner__btn {
         color: #fff;
         font-size: 0.9em;
         border: 2px solid #fff;
@@ -69,7 +69,7 @@
       flex-direction: row;
       width: 100%;
       box-sizing: border-box;
-      .cosmetic-block-event-img__first {
+      .cosmetic-block-event__first {
         margin-right: 2%;
       }
     }
@@ -82,7 +82,7 @@
         color: #111;
         font-size: 0.8rem;
       }
-      .cosmetic-block-tab__active {
+      .cosmetic-block-tab--active {
         background-color: #000;
         color: #fff;
       }
@@ -123,7 +123,7 @@
   background-color: #000;
   text-align: center;
   color: #fff;
-  .cosmetic-footer-social {
+  .cosmetic-footer__social {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -134,7 +134,7 @@
       margin-right: 5px;
     }
   }
-  .cosmetic-footer-list {
+  .cosmetic-footer__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -167,16 +167,16 @@
       }
     }
   }
-  .cosmetic-footer-form {
+  .cosmetic-footer__form {
     background-color: #000;
     margin: 0 auto;
-    .cosmetic-footer-form-label {
+    .cosmetic-footer__label {
       padding: 10px 0;
       text-align: center;
       font-size: 1.1em;
       color: #fff;
     }
-    .cosmetic-footer-input {
+    .cosmetic-footer__input {
       border: 1px solid #999;
       color: #fff;
       background: #000;
@@ -184,7 +184,7 @@
       width: 190px;
       height: 37px;
     }
-    .cosmetic-footer-form-btn {
+    .cosmetic-footer__btn {
       background-color: #fff;
       border: 1px solid #999;
       color: #666;
@@ -229,7 +229,7 @@
         }
       }
     }
-    .cosmetic-menu-logo {
+    .cosmetic-menu__logo {
       left: 1.5rem;
       top: 0;
     }
@@ -315,18 +315,18 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    .banner-img {
+    .cosmetic-banner__img {
       grid-column: 1 / 2;
       width: 100%;
     }
-    .banner-info {
+    .cosmetic-banner__info {
       grid-column: 1 / 2;
       position: relative;
       top: 70px;
       left: auto;
-      text-align: center;
+      text-banner-imgalign: center;
       padding: 20px 0;
-      .banner-info__btn {
+      .cosmetic-banner__btn {
         width: 100%;
         display: block;
       }
@@ -338,7 +338,7 @@
     margin-top: 50px;
     .cosmetic-banner {
       flex-direction: column;
-      .banner-img {
+      .cosmetic-banner__img {
         width: 100%;
       }
       .banner-info {

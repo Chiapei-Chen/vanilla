@@ -1,0 +1,39 @@
+.navigator {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(235, 188, 235);
+  backdrop-filter: blur(10px);
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    margin-right: 0.6rem;
+  }
+}
+
+.navigator-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(250, 250, 250, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.navigator-panel {
+  background: linear-gradient(90deg, #c81111, #912e2e);
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.5);
+  //x軸位移
+  transform: translateX(100%);
+}

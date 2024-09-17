@@ -45,3 +45,13 @@ mobilebtn.addEventListener("click", () => {
   cosmeticpanel.classList.toggle("is-open");
   console.log("costmeticMenuClick");
 });
+
+//extra
+document.addEventListener("DOMContentLoaded",()=>{
+  const navTrigger=document.getElementById('nav-trigger');
+  const navMask=document.getElementById('nav-mask');
+  const navPanel=document.getElementById('nav-panel')
+})
+
+//初始化 隱藏選單且不顯示transition效果 並且清除選單的disabled狀態
+navPanel

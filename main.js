@@ -19,39 +19,54 @@ document.addEventListener("DOMContentLoaded", () => {
   productCards.forEach((card) => {
     card.addEventListener("click", () => handleCardClick(card));
   });
+
+  
 });
 
 // 手機選單點擊事件
-// const mobileMenu=document.getElementById('mobile-menu-btn');
-// const mobileMenuMask=document.getElementById('mobile-menu-mask');
-// mobileMenu.addEventListener('click',()=>{
-//   const panel=document.getElementById('mobile-menu-panel');
-//   panel.classList.toggle('is-open');
-//   mobileMenuMask.classList.toggle('is-open');
-//   console.log('mobileMenuClick');
-// })
+const mobileMenu=document.getElementById('mobile-menu-btn');
+const mobileMenuMask=document.getElementById('mobile-menu-mask');
+mobileMenu.addEventListener('click',()=>{
+  const panel=document.getElementById('mobile-menu-panel');
+  panel.classList.toggle('is-open');
+  mobileMenuMask.classList.toggle('is-open');
+  console.log('mobileMenuClick');
+})
 
-// mobileMenuMask.addEventListener('click',()=>{
-//   const panel=document.getElementById('mobile-menu-panel');
-//   panel.classList.remove('is-open');
-//   mobileMenuMask.classList.remove('is-open');
-//   console.log('mobileMaskClick');
-// })
+mobileMenuMask.addEventListener('click',()=>{
+  const panel=document.getElementById('mobile-menu-panel');
+  panel.classList.remove('is-open');
+  mobileMenuMask.classList.remove('is-open');
+  console.log('mobileMaskClick');
+})
 
 //cosmetic
-const mobilebtn = document.getElementById(" mobile-btn ");
-mobilebtn.addEventListener("click", () => {
+const mobilebtn = document.getElementById("mobile-btn");
+  mobilebtn.addEventListener('click', () => {
   const cosmeticpanel = document.getElementById("mobile-panel");
   cosmeticpanel.classList.toggle("is-open");
   console.log("costmeticMenuClick");
 });
 
 //extra
-document.addEventListener("DOMContentLoaded",()=>{
-  const navTrigger=document.getElementById('nav-trigger');
-  const navMask=document.getElementById('nav-mask');
-  const navPanel=document.getElementById('nav-panel')
-})
+document.addEventListener("DOMContentLoaded", () => {
+  const navTrigger = document.getElementById("nav-trigger");
+  const navMask = document.getElementById("nav-mask");
+  const navPanel = document.getElementById("nav-panel");
 
-//初始化 隱藏選單且不顯示transition效果 並且清除選單的disabled狀態
-navPanel
+  //初始化 隱藏選單且不顯示transition效果 並且清除選單的disabled狀態
+  navPanel.classList.remove("is-disabled");
+
+  // 切換選單狀態的函示
+  const toggleNav = (isOpen) => {
+    navPanel.classList.toggle("is-active", isOpen);
+    navPanel.classList.toggle("is-disabled", !isOpen);
+    navMask.classList.toggle("is-active", isOpen);
+  };
+
+  // 監聽選單按鈕的點擊事件，開啟選單
+  navTrigger.addEventListener("click", () => toggleNav(true));
+
+  // 監聽遮罩的點擊事件，關閉選單
+  navMask.addEventListener("click", () => toggleNav(false));
+});

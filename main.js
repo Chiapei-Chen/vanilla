@@ -20,32 +20,30 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("click", () => handleCardClick(card));
   });
 
-  
-});
+  //cosmetic
+  const mobilebtn = document.getElementById("mobile-button");
+  mobilebtn.addEventListener("click", () => {
+    const cosmeticpanel = document.getElementById("mobile-panel");
+    cosmeticpanel.classList.toggle("is-open");
+    console.log("costmeticMenuClick");
+  });
 
-// 手機選單點擊事件
-const mobileMenu=document.getElementById('mobile-menu-btn');
-const mobileMenuMask=document.getElementById('mobile-menu-mask');
-mobileMenu.addEventListener('click',()=>{
-  const panel=document.getElementById('mobile-menu-panel');
-  panel.classList.toggle('is-open');
-  mobileMenuMask.classList.toggle('is-open');
-  console.log('mobileMenuClick');
-})
+  // 手機選單點擊事件 //products
+  const mobileMenu = document.getElementById("mobile-menu-btn");
+  const mobileMenuMask = document.getElementById("mobile-menu-mask");
+  mobileMenu.addEventListener("click", () => {
+    const panel = document.getElementById("mobile-menu-panel");
+    panel.classList.toggle("is-open");
+    mobileMenuMask.classList.toggle("is-open");
+    console.log("mobileMenuClick");
+  });
 
-mobileMenuMask.addEventListener('click',()=>{
-  const panel=document.getElementById('mobile-menu-panel');
-  panel.classList.remove('is-open');
-  mobileMenuMask.classList.remove('is-open');
-  console.log('mobileMaskClick');
-})
-
-//cosmetic
-const mobilebtn = document.getElementById("mobile-btn");
-  mobilebtn.addEventListener('click', () => {
-  const cosmeticpanel = document.getElementById("mobile-panel");
-  cosmeticpanel.classList.toggle("is-open");
-  console.log("costmeticMenuClick");
+  mobileMenuMask.addEventListener("click", () => {
+    const panel = document.getElementById("mobile-menu-panel");
+    panel.classList.remove("is-open");
+    mobileMenuMask.classList.remove("is-open");
+    console.log("mobileMaskClick");
+  });
 });
 
 //extra

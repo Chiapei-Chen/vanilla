@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // })
 
 //cosmetic
-const mobilebtn = document.getElementById("cosmeticmenu-mobile__btn");
+const mobilebtn = document.getElementById(" mobile-btn ");
 mobilebtn.addEventListener("click", () => {
-  const cosmeticpanel = document.getElementById("cosmeticmenu-mobile__panel");
+  const cosmeticpanel = document.getElementById("mobile-panel");
   cosmeticpanel.classList.toggle("is-open");
   console.log("costmeticMenuClick");
 });

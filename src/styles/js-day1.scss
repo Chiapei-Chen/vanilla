@@ -1,0 +1,53 @@
+.app {
+    width: 20rem;
+    input[type="text"],
+    input[type="number"]{
+      border-radius: 6px;
+      height: 36px;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      color:#000000;
+    }
+    input{
+      background-color: antiquewhite;
+    }
+    label {
+      font-size: 0.85rem;
+      color: #000000;
+    }
+    .submit {
+      transition: all 0.3s ease-in-out;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      min-width: 80px;
+      min-height: 36px;
+      color: #fff;
+      cursor: pointer;
+      background-color: #009900;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: lighten(#009900, 10%);
+      }
+    }
+  }
+  
+  #result {
+    color: #333;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+  
+  .input-rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.end {
+      justify-content: flex-end;
+    }
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

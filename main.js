@@ -1,4 +1,6 @@
 import "./src/styles/style.scss";
+import "./js/js-day-1.js";
+
 // DOMContentLoaded = DOM確定載入後執行
 document.addEventListener("DOMContentLoaded", () => {
   // 選擇所有需要被監聽的對象

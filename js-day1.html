@@ -6,33 +6,35 @@
     <title>Js day1</title>
   </head>
   <body>
-    <div class="form">
-      <div class="input-rows">
-        <label>Name:</label>
-        <input id="nameVal" type="text" placeholder="Name" />
-      </div>
-      <div class="input-rows">
-        <label>Job:</label>
-        <input id="jobVal" type="text" placeholder="Job" />
-      </div>
-      <div class="input-rows">
-        <label>Company:</label>
-        <input id="companyVal" type="text" placeholder="Company" />
-      </div>
-      <div class="input-rows">
-        <label>Seniority:</label>
-        <input id="seniorityVal" type="number" placeholder="Seniority" />
-      </div>
-      <div class="input-rows">
-        <label>Designer Exp:</label>
-        <input id="designerExp" type="number" placeholder="Designer Exp" />
-      </div>
-      <div class="input-rows">
-        <label>Devoloper Exp:</label>
-        <input id="developerExp" type="number" placeholder="Devoloper Exp" />
-      </div>
-      <div class="input-rows end">
-        <button class="submit" onClick="submit()">Confirm</button>
+    <div class="app">
+      <div class="form">
+        <div class="input-rows">
+          <label>Name:</label>
+          <input id="nameVal" type="text" placeholder="Name" />
+        </div>
+        <div class="input-rows">
+          <label>Job:</label>
+          <input id="jobVal" type="text" placeholder="Job" />
+        </div>
+        <div class="input-rows">
+          <label>Company:</label>
+          <input id="companyVal" type="text" placeholder="Company" />
+        </div>
+        <div class="input-rows">
+          <label>Seniority:</label>
+          <input id="seniorityVal" type="number" placeholder="Seniority" />
+        </div>
+        <div class="input-rows">
+          <label>Designer Exp:</label>
+          <input id="designerExp" type="number" placeholder="Designer Exp" />
+        </div>
+        <div class="input-rows">
+          <label>Devoloper Exp:</label>
+          <input id="developerExp" type="number" placeholder="Devoloper Exp" />
+        </div>
+        <div class="input-rows end">
+          <button class="submit" onClick="day1submit()" id="submitButton">Confirm</button>
+        </div>
       </div>
     </div>
     <p>Result:</p>
@@ -41,4 +43,5 @@
       And I have more than [designer + developer] years of work experience.
     </div>
   </body>
+  <script type="module" src="/main.js"></script>
 </html>

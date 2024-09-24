@@ -1,52 +1,103 @@
 import "./src/styles/style.scss";
-import "./js/js-day-1.js";
+//import "@/js/js-day-1.js";
+
+//定義一個策略物件 用來映射步同業面對應h1標題
+const pageTitleStrategy = {
+  "/index.html": () => "Home Page",
+  "/hwproducts.html": () => "RWD : Products",
+  "/news.html": () => "News",
+  "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
+  "/default": () => "Welcome to Our Website",
+};
+
+//判斷當前葉面設定標題
+const getCurrentPageTitle = () => {
+  const path = window.location.pathname;
+  // 根據當前頁面的 path，從策略物件中選擇對應的標題
+  return pageTitleStrategy[path]
+    ? pageTitleStrategy[path]()
+    : pageTitleStrategy["/default"]();
+};
+
+// 動態將nav相關的內容加入到頁面上
+const appContent = document.getElementById("app");
+appContent.insertAdjacentHTML(
+  "afterbegin",
+  `
+  <nav class="navigator">
+    <div class="navigator-title">${getCurrentPageTitle()}</div>
+    <div id="nav-trigger" class="navigator-trigger"><i></i></div>
+  </nav>
+  <div id="nav-mask" class="navigator-mask"></div>
+  <div id="nav-panel" class="navigator-panel">
+    <b>HTML/CSS</b>
+    <ul class="navigator-list">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="./news.html">News</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./hwproducts.html">HWProducts</a></li>
+        <li><a href="./grid-products.html">grid-products</a></li>
+        <li><a href="./cosmetic.html">cosmetic</a></li>
+        <li><a href="./extra-homework.html">extra</a></li>
+    </ul>
+    <b>Javascript</b>
+    <ul class="nav-list">
+      <li>
+        <a href="js-day1.html">Day-1: 資料型別與型別轉換</a>
+      </li>
+      <li>
+        <a href="javascript: void()">Day Extra: 偵聽器與DOM操作</a>
+      </li>
+    </ul>
+  </div>  
+ `
+);
 
 // DOMContentLoaded = DOM確定載入後執行
-document.addEventListener("DOMContentLoaded", () => {
-  // 選擇所有需要被監聽的對象
-  const productCards = document.querySelectorAll(".product-card");
-  // 移除class name的事件
-  const removeActiveClassFromAll = () => {
-    productCards.forEach((card) =>
-      card.classList.remove("product-card--active")
-    );
-  };
-  // 點擊事件
-  const handleCardClick = (card) => {
-    removeActiveClassFromAll();
-    card.classList.add("product-card--active");
-    console.log("product-card--active");
-  };
-  // 監聽所有的productCards，並且點擊後執行handleCardClick
-  productCards.forEach((card) => {
-    card.addEventListener("click", () => handleCardClick(card));
-  });
+// document.addEventListener("DOMContentLoaded", () => {
+//   // 選擇所有需要被監聽的對象
+//   const productCards = document.querySelectorAll(".product-card");
+//   // 移除class name的事件
+//   const removeActiveClassFromAll = () => {
+//     productCards.forEach((card) =>
+//       card.classList.remove("product-card--active")
+//     );
+//   };
+//   // 點擊事件
+//   const handleCardClick = (card) => {
+//     removeActiveClassFromAll();
+//     card.classList.add("product-card--active");
+//     console.log("product-card--active");
+//   };
+//   // 監聽所有的productCards，並且點擊後執行handleCardClick
+//   productCards.forEach((card) => {
+//     card.addEventListener("click", () => handleCardClick(card));
+//   });
 
-  //cosmetic
-  const mobilebtn = document.getElementById("mobile-button");
-  mobilebtn.addEventListener("click", () => {
-    const cosmeticpanel = document.getElementById("mobile-panel");
-    cosmeticpanel.classList.toggle("is-open");
-    console.log("costmeticMenuClick");
-  });
+//   //cosmetic
+//   const mobilebtn = document.getElementById("mobile-button");
+//   mobilebtn.addEventListener("click", () => {
+//     const cosmeticpanel = document.getElementById("mobile-panel");
+//     cosmeticpanel.classList.toggle("is-open");
+//     console.log("costmeticMenuClick");
+//   });
 
-  // 手機選單點擊事件 //products
-  // const mobileMenu = document.getElementById("mobile-menu-btn");
-  // const mobileMenuMask = document.getElementById("mobile-menu-mask");
-  // mobileMenu.addEventListener("click", () => {
-  //   const panel = document.getElementById("mobile-menu-panel");
-  //   panel.classList.toggle("is-open");
-  //   mobileMenuMask.classList.toggle("is-open");
-  //   console.log("mobileMenuClick");
-  // });
+// 手機選單點擊事件 //products
+// const mobileMenu = document.getElementById("mobile-menu-btn");
+// const mobileMenuMask = document.getElementById("mobile-menu-mask");
+// mobileMenu.addEventListener("click", () => {
+//   const panel = document.getElementById("mobile-menu-panel");
+//   panel.classList.toggle("is-open");
+//   mobileMenuMask.classList.toggle("is-open");
+//   console.log("mobileMenuClick");
+// });
 
-  // mobileMenuMask.addEventListener("click", () => {
-  //   const panel = document.getElementById("mobile-menu-panel");
-  //   panel.classList.remove("is-open");
-  //   mobileMenuMask.classList.remove("is-open");
-  //   console.log("mobileMaskClick");
-  // });
-});
+// mobileMenuMask.addEventListener("click", () => {
+//   const panel = document.getElementById("mobile-menu-panel");
+//   panel.classList.remove("is-open");
+//   mobileMenuMask.classList.remove("is-open");
+//   console.log("mobileMaskClick");
+// });
 
 //extra
 document.addEventListener("DOMContentLoaded", () => {

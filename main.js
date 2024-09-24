@@ -1,12 +1,12 @@
 import "./src/styles/style.scss";
-//import "@/js/js-day-1.js";
+import "@/js/js-day-1.js";
 
 //定義一個策略物件 用來映射步同業面對應h1標題
 const pageTitleStrategy = {
   "/index.html": () => "Home Page",
-  "/products.html":()=>"RWD:Products -class",
+  "/products.html": () => "RWD:Products -class",
   "/hwproducts.html": () => "RWD : HWProducts tailwind",
-  "/grid-products.html":()=>"Grid Products",
+  "/grid-products.html": () => "Grid Products",
   "/news.html": () => "News",
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
   "/default": () => "Welcome to Our Website",
@@ -55,6 +55,29 @@ appContent.insertAdjacentHTML(
  `
 );
 
+//extra
+document.addEventListener("DOMContentLoaded", () => {
+  const navTrigger = document.getElementById("nav-trigger");
+  const navMask = document.getElementById("nav-mask");
+  const navPanel = document.getElementById("nav-panel");
+
+  //初始化 隱藏選單且不顯示transition效果 並且清除選單的disabled狀態
+  navPanel.classList.remove("is-disabled");
+
+  // 切換選單狀態的函示
+  const toggleNav = (isOpen) => {
+    navPanel.classList.toggle("is-active", isOpen);
+    navPanel.classList.toggle("is-disabled", !isOpen);
+    navMask.classList.toggle("is-active", isOpen);
+  };
+
+  // 監聽選單按鈕的點擊事件，開啟選單
+  navTrigger.addEventListener("click", () => toggleNav(true));
+
+  // 監聽遮罩的點擊事件，關閉選單
+  navMask.addEventListener("click", () => toggleNav(false));
+});
+
 // DOMContentLoaded = DOM確定載入後執行
 // document.addEventListener("DOMContentLoaded", () => {
 //   // 選擇所有需要被監聽的對象
@@ -100,26 +123,3 @@ appContent.insertAdjacentHTML(
 //   mobileMenuMask.classList.remove("is-open");
 //   console.log("mobileMaskClick");
 // });
-
-//extra
-document.addEventListener("DOMContentLoaded", () => {
-  const navTrigger = document.getElementById("nav-trigger");
-  const navMask = document.getElementById("nav-mask");
-  const navPanel = document.getElementById("nav-panel");
-
-  //初始化 隱藏選單且不顯示transition效果 並且清除選單的disabled狀態
-  navPanel.classList.remove("is-disabled");
-
-  // 切換選單狀態的函示
-  const toggleNav = (isOpen) => {
-    navPanel.classList.toggle("is-active", isOpen);
-    navPanel.classList.toggle("is-disabled", !isOpen);
-    navMask.classList.toggle("is-active", isOpen);
-  };
-
-  // 監聽選單按鈕的點擊事件，開啟選單
-  navTrigger.addEventListener("click", () => toggleNav(true));
-
-  // 監聽遮罩的點擊事件，關閉選單
-  navMask.addEventListener("click", () => toggleNav(false));
-});

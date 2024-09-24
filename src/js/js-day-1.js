@@ -7,7 +7,7 @@ var day1formObj = {
   developerExp: "",
 };
 
-var day1submit = () => {
+var dayfirstsubmit = () => {
   console.log("this function is used");
   // 請從這裡開始作答，寫出事件和對象綁定，來替換掉Result的所有文字
   day1formObj.name = document.getElementById("nameVal").value;
@@ -27,5 +27,7 @@ And I have more than ${totalExp} years of work experience.`;
   document.getElementById("result").innerHTML = resultText;
   console.log(resultText);
 };
+document.addEventListener("DOMContentLoaded",function(){
+  document.getElementById("submitButton").addEventListener("click", dayfirstsubmit);
 
-document.getElementById("submitButton").addEventListener("click", day1submit);
+});

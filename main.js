@@ -4,7 +4,9 @@ import "./src/styles/style.scss";
 //定義一個策略物件 用來映射步同業面對應h1標題
 const pageTitleStrategy = {
   "/index.html": () => "Home Page",
-  "/hwproducts.html": () => "RWD : Products",
+  "/products.html":()=>"RWD:Products -class",
+  "/hwproducts.html": () => "RWD : HWProducts tailwind",
+  "/grid-products.html":()=>"Grid Products",
   "/news.html": () => "News",
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
   "/default": () => "Welcome to Our Website",

@@ -1,6 +1,7 @@
 import "./src/styles/style.scss";
 import "@/js/js-day-1.js";
 
+
 //定義一個策略物件 用來映射步同業面對應h1標題
 const pageTitleStrategy = {
   "/index.html": () => "Home Page",
@@ -43,7 +44,7 @@ appContent.insertAdjacentHTML(
         <li><a href="./extra-homework.html">extra</a></li>
     </ul>
     <b>Javascript</b>
-    <ul class="nav-list">
+    <ul class="navigator-list">
       <li>
         <a href="js-day1.html">Day-1: 資料型別與型別轉換</a>
       </li>

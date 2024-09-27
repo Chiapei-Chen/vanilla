@@ -25,9 +25,8 @@ var dayfirstsubmit = () => {
 And I have more than ${totalExp} years of work experience.`;
 
   document.getElementById("result").innerHTML = resultText;
-  console.log(resultText);
 };
-document.addEventListener("DOMContentLoaded",function(){
-  document.getElementById("submitButton").addEventListener("click", dayfirstsubmit);
+// document.addEventListener("DOMContentLoaded",function(){
+//   document.getElementById("submitButton").addEventListener("click", dayfirstsubmit);
 
-});
+// });

@@ -1,5 +1,5 @@
 import "./src/styles/style.scss";
-import "@/js/js-day-1.js";
+// import "@/js/js-day-1.js";
 
 
 //定義一個策略物件 用來映射步同業面對應h1標題

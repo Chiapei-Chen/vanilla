@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>變數、作用域、物件</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  
+      <div class="form">
+        <div class="input-rows">
+          <label>Name:</label>
+          <input id="nameVal" type="text" placeholder="Name" />
+        </div>
+        <div class="input-rows">
+          <label>Job:</label>
+          <input id="jobVal" type="text" placeholder="Job" />
+        </div>
+        <div class="input-rows">
+          <label>Company:</label>
+          <input id="companyVal" type="text" placeholder="Company" />
+        </div>
+        <div class="input-rows">
+          <label>Seniority:</label>
+          <input id="seniorityVal" type="number" placeholder="Seniority" />
+        </div>
+        <div class="input-rows">
+          <label>Designer Exp:</label>
+          <input id="designerExp" type="number" placeholder="Designer Exp" />
+        </div>
+        <div class="input-rows">
+          <label>Devoloper Exp:</label>
+          <input id="developerExp" type="number" placeholder="Devoloper Exp" />
+        </div>
+        <div class="input-rows end">
+          <button class="submit" onClick="dayfirstsubmit()" id="submitButton">
+            Confirm
+          </button>
+        </div>
+      </div>
+      <p>Result:</p>
+      <div id="result">
+        My name is [name], I am a [job] of [company] for [seniority] years.<br />
+        And I have more than [designer + developer] years of work experience.
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/main.js"></script>
+  <script   src="/src/js/js-day-1.js"></script>
+  
+</html>
+

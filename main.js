@@ -10,6 +10,7 @@ const pageTitleStrategy = {
   "/grid-products.html": () => "Grid Products",
   "/news.html": () => "News",
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
+  "/js-day2.html": () => "Javascript DAY-2: 變數、作用域、",
   "/default": () => "Welcome to Our Website",
 };
 
@@ -47,6 +48,9 @@ appContent.insertAdjacentHTML(
     <ul class="navigator-list">
       <li>
         <a href="js-day1.html">Day-1: 資料型別與型別轉換</a>
+      </li>
+      <li>
+        <a href="js-day2.html">Day-2: 變數、作用域、物件</a>
       </li>
       <li>
         <a href="javascript: void()">Day Extra: 偵聽器與DOM操作</a>

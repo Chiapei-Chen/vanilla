@@ -27,8 +27,9 @@ export default defineConfig({
         news: resolve(__dirname, "news.html"),
         products: resolve(__dirname, "products.html"),
         hwproducts: resolve(__dirname, "hwproducts.html"),
-        gridProducts: resolve(__dirname, "gridproducts.html"),
-        extrahomework:resolve(__dirname,"extrahomework.html"),
+        cosmetic:resolve(__dirname,"cosmetic.html"),
+        gridproducts: resolve(__dirname, "grid-products.html"),
+        extrahomework:resolve(__dirname,"extra-homework.html"),
         jsday1:resolve(__dirname,"js-day1.html"),
         jsday2:resolve(__dirname,"js-day2.html")
       },

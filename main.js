@@ -7,6 +7,7 @@ const pageTitleStrategy = {
   "/index.html": () => "Home Page",
   "/products.html": () => "RWD:Products -class",
   "/hwproducts.html": () => "RWD : HWProducts tailwind",
+  "/cosmetic.html":()=>"RWD:Cosmetic",
   "/grid-products.html": () => "Grid Products",
   "/news.html": () => "News",
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
@@ -105,12 +106,12 @@ document.addEventListener("DOMContentLoaded", () => {
 //   });
 
 //   //cosmetic
-//   const mobilebtn = document.getElementById("mobile-button");
-//   mobilebtn.addEventListener("click", () => {
-//     const cosmeticpanel = document.getElementById("mobile-panel");
-//     cosmeticpanel.classList.toggle("is-open");
-//     console.log("costmeticMenuClick");
-//   });
+  const mobilebtn = document.getElementById("mobile-button");
+  mobilebtn.addEventListener("click", () => {
+    const cosmeticpanel = document.getElementById("mobile-panel");
+    cosmeticpanel.classList.toggle("is-open");
+    console.log("costmeticMenuClick");
+  });
 
 // 手機選單點擊事件 //products
 // const mobileMenu = document.getElementById("mobile-menu-btn");

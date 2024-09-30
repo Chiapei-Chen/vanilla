@@ -59,7 +59,7 @@ var cake={
   }
 }
 
-cake.hello();  //undefined  在window宣告var price="window price" 此時會是window price
+// cake.hello();  //undefined  在window宣告var price="window price" 此時會是window price
 cake.mycake(); //400
 
 //箭頭函式 function
@@ -71,3 +71,18 @@ cake.mycake(); //400
 //什麼時候使用箭頭函數？
 // 箭頭函數的主要優勢在於它能夠簡化回呼函數的寫法，特別是在需要保留外部上下文的情況下，例如在處理異步操作（如 setTimeout 或 Promise）時。
 // 但是，當需要訪問物件的屬性時，應使用普通函數來確保 this 指向該物件
+
+//新增
+cake.maker="Lily";
+console.log(cake.maker);
+//更新屬性
+cake.flavor="orange";
+console.log(cake.flavor);
+//delete
+delete cake.flavor;
+
+cake.flavor="apple";
+console.log(cake.flavor);
+
+
+

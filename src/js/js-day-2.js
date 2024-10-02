@@ -85,4 +85,68 @@ cake.flavor="apple";
 console.log(cake.flavor);
 
 
+if("flavor"in cake)
+{
+  console.log("flavor is exist");
+}else{
+  console.log("flavor isnt here");
+}
 
+//in 用來檢查某屬性或是索引是否存在對象或其原型鏈中
+//property in object
+
+const obj={a:1,b:2,c:undefined};
+console.log("toString" in obj);  //true 因為toString繼承自object的原型方法
+console.log("c" in obj); //true 因為是檢查屬性 而不是值
+
+console.log("---HasOwnProperty vs In---");
+//hasOwnProperty 只檢查對象自身是否擁有屬性 不檢查原型練
+const queen={name:"Coco"};
+console.log(queen.hasOwnProperty("toString")); //false  只檢查本身物件 toString存在於原型練
+console.log("toString" in queen);  //true
+
+//Prototype原型鍊  用於對象繼承機制 通過原型鍊 js對象可以共享屬性和方法 
+//Object.getPrototypeOf(obj) //獲取對象的原型方式
+console.log("---Prototype---")
+
+const animal={eats:true};
+
+const rabbit={jumps:true};
+
+//設定rabbit的原型為animal
+rabbit.__proto__=animal;
+
+console.log(rabbit.eats);
+console.log(rabbit.jumps);
+
+//原型練最頂端是Object.prototype 所有對象除了null最終都繼承自Object.prototype
+console.log(Object.prototype.__proto__);
+
+//.prototype屬性 是構造函數(類)特有屬性 定義通過該構造函數創建的所有實例的共享原型對象
+//用於定義構造函數的實例對象共享的屬性和方法
+
+//__proto__ 属性
+//每個對象都有隱藏屬性 指向該對象原型 指向創建該對象的構造函數prototype
+//存在於所有對象上 
+
+console.log("---Object.keys--")
+const monster = {
+  score: 15000,
+  objective: 3,
+  special: 5000,
+  compelete: 10000
+  }
+//let count=monster.objective;  //3
+//讓每個數字*3倍
+//Object會讓物件的屬性名稱轉為一個陣列
+Object.keys(monster).forEach(x=>{monster[x]=monster[x]*3});
+console.log(monster);
+
+const values=Object.values(monster).map(y=>y*3);
+console.log(values);  
+
+//forEach()：只遍歷陣列並執行給定的函數，不會返回任何值（返回值為 undefined）。
+// map()：遍歷陣列並對每個元素執行函數，然後返回一個包含結果的新陣列
+
+console.log("---Deep Copy--")
+//Deep Copy

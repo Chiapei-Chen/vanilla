@@ -150,3 +150,60 @@ console.log(values);
 
 console.log("---Deep Copy--")
 //Deep Copy
+const deepObj={
+ score:90,
+ name:"deepCopy",
+ age:50
+}
+
+const copyDeepObj=deepObj;
+copyDeepObj.score=70;
+console.log(copyDeepObj.score);
+console.log(deepObj.score);
+
+//Reference Type
+// 名詞解釋
+// 淺拷貝 是針對物件的淺層拷貝，它會把物件的第一層屬性進行複製。
+// 若屬性是基本類型（例如 number、string），它會創建一個新的副本，但如果屬性是引用類型（例如物件或陣列），它會僅僅複製引用，這導致淺拷貝後的物件還是與原物件共享內部引用。
+
+// 深拷貝（Deep Copy）：
+// 不僅複製物件的第一層屬性，還會遞歸地複製所有嵌套的物件，從而創建出一個完全獨立的物件。如果對深拷貝後的物件進行修改，則不會影響到原物件
+
+//Shallow Copy 
+//(1)ES6 的展開運算子（Spread Operator）：
+console.log("--...deepObj--")
+const copyobj={...deepObj};
+console.log(copyobj);
+
+//ES6新增的語法 可將物件所有屬性展開複製到新物件中  對於不含嵌套物件情況實用
+// !!! 如果 obj 中有嵌套的物件，這種方法只會對第一層的屬性進行淺拷貝，深層次的物件仍然是引用
+
+//(2)Object.assign 
+// 方法可以用來創建一個新物件，並將原物件的所有屬性拷貝到新物件中
+console.log("--Object.assign()--")
+const copyobj2=Object.assign(deepObj);
+console.log(copyobj2);
+
+
+// Deep Copy
+//(1)JSON.parse()  
+// JSON.stringfy()物件轉換為 JSON 字符串，然後再解析成一個新物件，實現了深拷貝。
+
+const corn={price:30,status:{sold:3}};
+
+const copyCorn={...corn};
+const assignCorn=Object.assign({},corn);
+const jsonCorn=JSON.parse(JSON.stringify(corn));
+corn.price=40;
+corn.status.sold=4;
+//修改corn屬性
+console.log("修改過corn");
+console.log(corn); //40 4
+
+console.log("--shallow copy--");
+console.log(copyCorn);   //30 4
+console.log(assignCorn);  //30 4
+
+console.log("--deep copy--");
+console.log(jsonCorn); //30 3
+

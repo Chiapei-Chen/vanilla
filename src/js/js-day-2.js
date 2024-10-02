@@ -207,3 +207,21 @@ console.log(assignCorn);  //30 4
 console.log("--deep copy--");
 console.log(jsonCorn); //30 3
 
+//StructuredClone
+// 傳統的 JSON.parse(JSON.stringify()) 方法常用來進行深拷貝，但它有一些缺點，例如無法拷貝 Date、Map、Set 或函數等複雜類型。而 structuredClone 則沒有這些限制，能夠更全面地進行深拷貝
+const Zooclass={name:"Zebra",
+age:[2,3,4,5],activity:"play toy",details:{year:2000},created:new Date()}
+
+Zooclass.details.year=2001;
+
+const clonedZoo=structuredClone(Zooclass);
+console.log("### Original Object:", Zooclass);
+console.log("### Cloned Object:", clonedZoo);
+
+console.log(Zooclass!== clonedZoo)
+console.log(clonedZoo.details !=Zooclass.details); 
+
+
+// JS 引用類型（如物件、陣列、函數、日期、正則表達式、Map、Set 等）
+
+

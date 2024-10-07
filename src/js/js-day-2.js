@@ -164,7 +164,8 @@ console.log(deepObj.score);
 //Reference Type
 // 名詞解釋
 // 淺拷貝 是針對物件的淺層拷貝，它會把物件的第一層屬性進行複製。
-// 若屬性是基本類型（例如 number、string），它會創建一個新的副本，但如果屬性是引用類型（例如物件或陣列），它會僅僅複製引用，這導致淺拷貝後的物件還是與原物件共享內部引用。
+// 若屬性是基本類型（例如 number、string），它會創建一個新的副本，但如果屬性是引用類型（例如物件或陣列），它會僅僅複製引用，
+// 這導致淺拷貝後的物件還是與原物件共享內部引用。
 
 // 深拷貝（Deep Copy）：
 // 不僅複製物件的第一層屬性，還會遞歸地複製所有嵌套的物件，從而創建出一個完全獨立的物件。如果對深拷貝後的物件進行修改，則不會影響到原物件
@@ -181,7 +182,7 @@ console.log(copyobj);
 //(2)Object.assign 
 // 方法可以用來創建一個新物件，並將原物件的所有屬性拷貝到新物件中
 console.log("--Object.assign()--")
-const copyobj2=Object.assign(deepObj);
+const copyobj2=Object.assign({},deepObj);
 console.log(copyobj2);
 
 

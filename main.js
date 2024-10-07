@@ -57,6 +57,9 @@ appContent.insertAdjacentHTML(
       <li>
         <a href="javascript: void()">Day Extra: 偵聽器與DOM操作</a>
       </li>
+       <li>
+        <a href="js-work-day-2.html">Day2 作業</a>
+      </li>
     </ul>
   </div>  
  `

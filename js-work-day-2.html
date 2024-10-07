@@ -7,12 +7,38 @@
   </head>
   <body>
     <div id="app"></div>
-  
-  
+    <div id="day2form">
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Score:</label>
+        <input id="scoreVal" type="text" placeholder="Score" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Special:</label>
+        <input id="specialVal" type="text" placeholder="Special" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>objective:</label>
+        <div>
+          <input id="rate_2x" type="radio" name="objective" value="2"/>
+          <label for="rate_2x">x2</label>
+          <input id="rate_4x" type="radio" name="objective" value="4"/>
+          <label for="rate_4x">x4</label>
+        </div>
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Compelete:</label>
+        <input id="compeleteVal" type="text" placeholder="Compelete" />
+      </div>
+      <div class="row horizontal end">
+        <button id="submitBtn" class="submit">Confirm</button>
+      </div>
+  </div>
+  <p>Result:</p>
+  <div id="day2result"></div>
     
   </body>
   <script type="module" src="/main.js"></script>
-  <script src="/src/js/js-day-1.js"></script>
+  <script src="/src/js/js-work-day-2.js"></script>
   
 </html>
 

@@ -128,4 +128,34 @@ function twoSum(nums, target) {
   }
 }
 
+console.log("ARRAY")
 //陣列的操作
+const petsArr=['dog','cat'];
+
+petsArr.push('pig');
+console.log(petsArr);
+petsArr.push('chicken');
+petsArr.push('bird');
+petsArr.unshift('rabbit');
+console.log(petsArr);
+petsArr.pop();
+console.log(petsArr);
+petsArr.shift();
+console.log(petsArr);
+
+// 尋找陣列項目的索引值
+const target=petsArr.indexOf('dog');
+console.log(target);
+// 移除指定索引值的項
+console.log(petsArr);
+petsArr.splice(target,1);
+console.log(petsArr);
+
+console.log("concat");
+const arr_1 = [ '動物之森', '明星大亂鬥' ];
+const arr_2 = [ '薩爾達傳說', '魔物獵人RISE' ];
+let myconcat = arr_1.concat(arr_2);
+
+//Es6方式
+let es6arr=arr_1.push(...arr_2);
+console.log(es6arr);

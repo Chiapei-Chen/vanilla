@@ -109,5 +109,51 @@
     color: #333;
     line-height: 2rem;
     font-weight: bold;
+    margin:20px 0;
+    background-color: #ccc;
+    width: 350px;
   }
-  
+//Second Part 
+#day2form2 {
+  width: 20rem;
+  input[type="text"] {
+    @include boxSizing;
+    border-radius: 6px;
+    height: 36px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    background-color: #e9cbe6;
+  }
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  label {
+    font-size: 0.85rem;
+    color: #333;
+  }
+  #submitBtnSecond {
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 80px;
+    min-height: 36px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(64, 25, 31);
+    &:hover {
+      transition: all 0.3s in-out;
+      background-color: lighten(#009900, 10%);
+    }
+  }
+}
+
+#secondResult {
+  color: #333;
+  line-height: 2rem;
+  font-weight: bold;
+  margin:20px 0;
+  background-color: #ccc;
+  width: 350px;
+}

@@ -7,6 +7,7 @@
   </head>
   <body>
     <div id="app"></div>
+    <p>---------First-------------</p>
     <div id="day2form">
       <div class="row horizontal space" data-space="space-bottom">
         <label>Score:</label>
@@ -19,9 +20,9 @@
       <div class="row horizontal space" data-space="space-bottom">
         <label>objective:</label>
         <div>
-          <input id="rate_2x" type="radio" name="objective" value="2"/>
+          <input id="rate_2x" type="radio" name="objective" value="2" />
           <label for="rate_2x">x2</label>
-          <input id="rate_4x" type="radio" name="objective" value="4"/>
+          <input id="rate_4x" type="radio" name="objective" value="4" />
           <label for="rate_4x">x4</label>
         </div>
       </div>
@@ -32,13 +33,38 @@
       <div class="row horizontal end">
         <button id="submitBtn" class="submit">Confirm</button>
       </div>
-  </div>
-  <p>Result:</p>
-  <div id="day2result"></div>
-    
+    </div>
+    <p>Result:</p>
+    <div id="day2result"></div>
+    <p>---------Second-------------</p>
+    <div id="day2form2" class="row inset">
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>First Name:</label>
+        <input id="firstNameVal" type="text" placeholder="First Name" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Last Name:</label>
+        <input id="lastNameVal" type="text" placeholder="Last Name" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Email:</label>
+        <input id="emailVal" type="text" placeholder="Email" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>Street:</label>
+        <input id="streetVal" type="text" placeholder="Street" />
+      </div>
+      <div class="row horizontal space" data-space="space-bottom">
+        <label>City:</label>
+        <input id="cityVal" type="text" placeholder="City" />
+      </div>
+      <div class="row horizontal end">
+        <button id="submitBtnSecond" class="submit">Update User</button>
+      </div>
+    </div>
+    <p>Updated User Data:</p>
+    <div id="secondResult"></div>
   </body>
   <script type="module" src="/main.js"></script>
   <script src="/src/js/js-work-day-2.js"></script>
-  
 </html>
-

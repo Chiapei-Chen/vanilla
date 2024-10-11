@@ -57,7 +57,7 @@ const existingUser = {
 
 // 顯示原始使用者資料
 const secondResultText = document.getElementById("secondResult");
-resultText.innerHTML = `
+secondResultText.innerHTML = `
   First Name: ${existingUser.firstName}<br/>
   Last Name: ${existingUser.lastName}<br/>
   Street: ${existingUser.address.street}<br/>
@@ -65,17 +65,23 @@ resultText.innerHTML = `
   Email: ${existingUser.email}
 `;
 
+// 預先填充輸入框的值
+document.getElementById("firstNameVal").value = existingUser.firstName;
+document.getElementById("lastNameVal").value = existingUser.lastName;
+document.getElementById("emailVal").value = existingUser.email;
+document.getElementById("streetVal").value = existingUser.address.street;
+document.getElementById("cityVal").value = existingUser.address.city;
+
 // 表單提交後的資料更新邏輯
 const submitBtnSecond = document.getElementById("submitBtnSecond");
 submitBtnSecond.addEventListener("click", () => {
-  
   // 取得輸入框的值
   const firstNameVal = document.getElementById("firstNameVal").value;
   const lastNameVal = document.getElementById("lastNameVal").value;
   const emailVal = document.getElementById("emailVal").value;
   const streetVal = document.getElementById("streetVal").value;
   const cityVal = document.getElementById("cityVal").value;
-  
+
   //使用Deep Copy
   const updatedUser = structuredClone(existingUser);
 

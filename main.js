@@ -13,6 +13,7 @@ const pageTitleStrategy = {
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
   "/js-day2.html": () => "Javascript DAY-2: 變數、作用域、",
   "/js-day3.html": () => "Javascript DAY-3: 函式、運算子、判別式",
+  "/js-day4.html": () => "Javascript DAY-4:",
   "/default": () => "Welcome to Our Website",
 };
 

@@ -85,6 +85,7 @@ submitBtnSecond.addEventListener("click", () => {
   //使用Deep Copy
   const updatedUser = structuredClone(existingUser);
 
+  //條件判斷 if 判斷存在且不為空就更新值
   if (firstNameVal) updatedUser.firstName = firstNameVal;
   if (lastNameVal) updatedUser.lastName = lastNameVal;
   if (emailVal) updatedUser.email = emailVal;

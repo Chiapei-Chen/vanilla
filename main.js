@@ -111,12 +111,12 @@ document.addEventListener("DOMContentLoaded", () => {
 //   });
 
 //   //cosmetic
-  const mobilebtn = document.getElementById("mobile-button");
-  mobilebtn.addEventListener("click", () => {
-    const cosmeticpanel = document.getElementById("mobile-panel");
-    cosmeticpanel.classList.toggle("is-open");
-    console.log("costmeticMenuClick");
-  });
+  // const mobilebtn = document.getElementById("mobile-button");
+  // mobilebtn.addEventListener("click", () => {
+  //   const cosmeticpanel = document.getElementById("mobile-panel");
+  //   cosmeticpanel.classList.toggle("is-open");
+  //   console.log("costmeticMenuClick");
+  // });
 
 // 手機選單點擊事件 //products
 // const mobileMenu = document.getElementById("mobile-menu-btn");

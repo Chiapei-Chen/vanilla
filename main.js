@@ -1,13 +1,12 @@
 import "./src/styles/style.scss";
 // import "@/js/js-day-1.js";
 
-
 //定義一個策略物件 用來映射步同業面對應h1標題
 const pageTitleStrategy = {
   "/index.html": () => "Home Page",
   "/products.html": () => "RWD:Products -class",
   "/hwproducts.html": () => "RWD : HWProducts tailwind",
-  "/cosmetic.html":()=>"RWD:Cosmetic",
+  "/cosmetic.html": () => "RWD:Cosmetic",
   "/grid-products.html": () => "Grid Products",
   "/news.html": () => "News",
   "/js-day1.html": () => "Javascript DAY-1: 資料型別與型別轉換",
@@ -55,11 +54,11 @@ appContent.insertAdjacentHTML(
       <li>
         <a href="js-day2.html">Day-2: 變數、作用域、物件</a>
       </li>
-      <li>
-        <a href="javascript: void()">Day Extra: 偵聽器與DOM操作</a>
-      </li>
        <li>
         <a href="js-work-day-2.html">Day2 作業</a>
+      </li>
+       <li>
+        <a href="js-work-day-3.html">Day3 作業</a>
       </li>
     </ul>
   </div>  
@@ -111,12 +110,12 @@ document.addEventListener("DOMContentLoaded", () => {
 //   });
 
 //   //cosmetic
-  // const mobilebtn = document.getElementById("mobile-button");
-  // mobilebtn.addEventListener("click", () => {
-  //   const cosmeticpanel = document.getElementById("mobile-panel");
-  //   cosmeticpanel.classList.toggle("is-open");
-  //   console.log("costmeticMenuClick");
-  // });
+// const mobilebtn = document.getElementById("mobile-button");
+// mobilebtn.addEventListener("click", () => {
+//   const cosmeticpanel = document.getElementById("mobile-panel");
+//   cosmeticpanel.classList.toggle("is-open");
+//   console.log("costmeticMenuClick");
+// });
 
 // 手機選單點擊事件 //products
 // const mobileMenu = document.getElementById("mobile-menu-btn");

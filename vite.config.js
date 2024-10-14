@@ -33,7 +33,9 @@ export default defineConfig({
         jsday1:resolve(__dirname,"js-day1.html"),
         jsday2:resolve(__dirname,"js-day2.html"),
         jsday3:resolve(__dirname,"js-day3.html"),
-        jsday4:resolve(__dirname,"js-day4.html")
+        jsday4:resolve(__dirname,"js-day4.html"),
+        jsworkday2:resolve(__dirname,"js-work-day-2.html"),
+        jsworkday3:resolve(__dirname,"js-work-day-3.html")
       },
       output: {
         /* 

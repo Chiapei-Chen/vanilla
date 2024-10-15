@@ -13,6 +13,7 @@ const pageTitleStrategy = {
   "/js-day2.html": () => "Javascript DAY-2: 變數、作用域、",
   "/js-day3.html": () => "Javascript DAY-3: 函式、運算子、判別式",
   "/js-day4.html": () => "Javascript DAY-4:",
+  "/js-day-3-dijikstra.html": () => " Dijikstra",
   "/default": () => "Welcome to Our Website",
 };
 
@@ -59,6 +60,9 @@ appContent.insertAdjacentHTML(
       </li>
        <li>
         <a href="js-work-day-3.html">Day3 作業</a>
+      </li>
+       <li>
+        <a href="js-work-day-3.html">Day3 Dijikstra</a>
       </li>
     </ul>
   </div>  

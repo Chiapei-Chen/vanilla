@@ -62,7 +62,7 @@ appContent.insertAdjacentHTML(
         <a href="js-work-day-3.html">Day3 作業</a>
       </li>
        <li>
-        <a href="js-work-day-3.html">Day3 Dijikstra</a>
+        <a href="js-day-3-dijikstra.html">Day3 Dijikstra</a>
       </li>
     </ul>
   </div>  

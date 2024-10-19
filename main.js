@@ -14,6 +14,7 @@ const pageTitleStrategy = {
   "/js-day3.html": () => "Javascript DAY-3: 函式、運算子、判別式",
   "/js-day4.html": () => "Javascript DAY-4:",
   "/js-day-3-dijikstra.html": () => " Dijikstra",
+  "/js-work-day-4.html": () => "day4-hw:仿製一個FFVII的戰鬥系統",
   "/default": () => "Welcome to Our Website",
 };
 

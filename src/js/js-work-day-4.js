@@ -108,8 +108,8 @@ const createPlayers = () => {
       let result = players[i].skill.map((item) => {
         return item.name;
       });
-      const player=players[i];
-      const disabled=player.hp===0?"disabled":"";
+      const player = players[i];
+      const disabled = player.hp === 0 ? "disabled" : "";
       const btnClass = player.hp === 0 ? "btn-disabled" : "btn-normal";
       for (let j in result) {
         html += `<button onClick="attackMethods(${i}, ${j})" ${disabled} class="${btnClass}">${result[j]}</button>`;

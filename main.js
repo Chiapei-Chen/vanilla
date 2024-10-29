@@ -1,5 +1,4 @@
 import "./src/styles/style.scss";
-// import "@/js/js-day-1.js";
 
 //定義一個策略物件 用來映射步同業面對應h1標題
 const pageTitleStrategy = {
@@ -65,6 +64,9 @@ appContent.insertAdjacentHTML(
        <li>
         <a href="js-day-3-dijikstra.html">Day3 Dijikstra</a>
       </li>
+        <li>
+        <a href="js-work-day-4.html">Day4 戰鬥系統</a>
+      </li>
     </ul>
   </div>  
  `
@@ -92,49 +94,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // 監聽遮罩的點擊事件，關閉選單
   navMask.addEventListener("click", () => toggleNav(false));
 });
-
-// DOMContentLoaded = DOM確定載入後執行
-// document.addEventListener("DOMContentLoaded", () => {
-//   // 選擇所有需要被監聽的對象
-//   const productCards = document.querySelectorAll(".product-card");
-//   // 移除class name的事件
-//   const removeActiveClassFromAll = () => {
-//     productCards.forEach((card) =>
-//       card.classList.remove("product-card--active")
-//     );
-//   };
-//   // 點擊事件
-//   const handleCardClick = (card) => {
-//     removeActiveClassFromAll();
-//     card.classList.add("product-card--active");
-//     console.log("product-card--active");
-//   };
-//   // 監聽所有的productCards，並且點擊後執行handleCardClick
-//   productCards.forEach((card) => {
-//     card.addEventListener("click", () => handleCardClick(card));
-//   });
-
-//   //cosmetic
-// const mobilebtn = document.getElementById("mobile-button");
-// mobilebtn.addEventListener("click", () => {
-//   const cosmeticpanel = document.getElementById("mobile-panel");
-//   cosmeticpanel.classList.toggle("is-open");
-//   console.log("costmeticMenuClick");
-// });
-
-// 手機選單點擊事件 //products
-// const mobileMenu = document.getElementById("mobile-menu-btn");
-// const mobileMenuMask = document.getElementById("mobile-menu-mask");
-// mobileMenu.addEventListener("click", () => {
-//   const panel = document.getElementById("mobile-menu-panel");
-//   panel.classList.toggle("is-open");
-//   mobileMenuMask.classList.toggle("is-open");
-//   console.log("mobileMenuClick");
-// });
-
-// mobileMenuMask.addEventListener("click", () => {
-//   const panel = document.getElementById("mobile-menu-panel");
-//   panel.classList.remove("is-open");
-//   mobileMenuMask.classList.remove("is-open");
-//   console.log("mobileMaskClick");
-// });

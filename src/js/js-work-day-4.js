@@ -186,7 +186,8 @@ const attackMethods = (playerIndex, playerSkill) => {
 
   // 檢查 BOSS 是否被擊敗
   if (boss.hp === 0) {
-    resultScope.innerHTML += `<br>戰鬥勝利！<button class="resetGame" onclick="resetGame()">重新再玩</button>`;
+    updateResultMsg(`<br>戰鬥勝利！<button class="resetGame" 
+      onclick="resetGame()">重新再玩</button>`);
     return;
   }
 
@@ -256,19 +257,21 @@ const bossAttack = () => {
 
   players.forEach((player) => {
     if (player.hp > 0) {
-      player.hp -= boss.skill[0].damage;
-      player.hp = Math.max(player.hp, 0); // 確保 HP 不低於 0
-      if (player.hp === 0) {
-        player.status = "無法戰鬥";
-        attackMsg += `${player.name} 被擊倒了！<br>`;
-      }
+      attackMsg += updatePlayerStatus(player, boss.skill[0].damage);
     }
   });
 
   updateResultMsg(attackMsg);
   updateStatus();
 };
-
+function updatePlayerStatus(player, damage) {
+  player.hp = Math.max(player.hp - damage, 0); // 扣除傷害並確保 HP 不低於 0
+  if (player.hp === 0) {
+    player.status = "無法戰鬥";
+    return `${player.name} 被擊倒了！<br>`;
+  }
+  return ""; // 若未被擊倒，返回空字串
+}
 const initialPlayers = _.cloneDeep(players);
 const initialMobs = _.cloneDeep(mobs);
 

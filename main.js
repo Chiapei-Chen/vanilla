@@ -14,6 +14,8 @@ const pageTitleStrategy = {
   "/js-day4.html": () => "Javascript DAY-4:",
   "/js-day-3-dijikstra.html": () => " Dijikstra",
   "/js-work-day-4.html": () => "day4-hw:仿製一個FFVII的戰鬥系統",
+  "/RegexinURLTest.html": () => "Regex in URL Test",
+  "/Day6Asynchronou.html": () => "Day6 Asynchronou",
   "/default": () => "Welcome to Our Website",
 };
 
@@ -66,6 +68,12 @@ appContent.insertAdjacentHTML(
       </li>
         <li>
         <a href="js-work-day-4.html">Day4 戰鬥系統</a>
+      </li>
+       <li>
+        <a href="RegexinURLTest.html">Regex in URL Test</a>
+      </li>
+        <li>
+        <a href="Day6Asynchronous.html">Day6Asynchronous</a>
       </li>
     </ul>
   </div>  

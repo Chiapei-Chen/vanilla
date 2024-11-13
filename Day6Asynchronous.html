@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day6Asynchronous</title>
+</head>
+<body>
+  <div id="app"></div>
+  <h1>異步處理：Axios</h1>
+  <p>使用 Axios Library 串接API印出指定格式</p>
+  <p>input中的值輸入關鍵字需可找到相應的國家結果，格式如下：</p>
+  <ul>
+    <li>Value 共有 N 筆資料</li>
+    <li>搜尋結果：國家名稱1, 國家名稱2...etc</li>
+  </ul>
+  
+  <!--作答區-->
+  <h2>作答區</h2>
+  <div class="row horizontal v_center">
+    <input id="queryStr" placeholder="Keywords">
+    <button onClick="callApi()">Search</button>
+  </div>
+  <br>
+ 
+  
+  <!--作答區-->
+  <h2>作答區</h2>
+  <div class="row horizontal v_center">
+    <input id="url_1" placeholder="URL 1">
+    <button onClick="printAnswer()">Action</button>
+  </div>
+  <br>
+  <div id="result"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script type="module" src="/main.js"></script>
+<script src="/src/js/Day6Asynchronou.js"></script>
+</html>

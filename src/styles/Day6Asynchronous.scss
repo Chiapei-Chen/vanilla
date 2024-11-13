@@ -21,6 +21,18 @@
   position: relative;
   width: 100%;
   margin: 0;
+  input#queryStr{
+    margin: 2px;
+    border: 1px solid;
+    background-color: #f7ecdc;
+    border-radius: 5px;
+  }
+  button{
+    background-color: rgb(242, 148, 41);
+    border-radius: 5px;
+    padding: 2px;
+    color:#f7ecdc;
+  }
   /* &符號是sass的非變數連接字符，這裡的&.any就是 .row.any的意思 */
   &.horizontal {
     @include flexBox(row);
@@ -76,4 +88,6 @@
   }
 }
 
-#app {}
+#Day6AsynchronousResult{
+  padding: 20px;
+}

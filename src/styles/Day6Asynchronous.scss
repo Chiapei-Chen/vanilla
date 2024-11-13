@@ -17,7 +17,7 @@
 
 .row {
   @include boxSizing;
-
+  
   position: relative;
   width: 100%;
   margin: 0;
@@ -28,10 +28,12 @@
     border-radius: 5px;
   }
   button{
-    background-color: rgb(242, 148, 41);
+    background-color: rgb(20, 18, 15);
     border-radius: 5px;
-    padding: 2px;
-    color:#f7ecdc;
+    padding: 4px;
+    height: 38px;
+    margin-left: 2px;
+    color:#ffffff;
   }
   /* &符號是sass的非變數連接字符，這裡的&.any就是 .row.any的意思 */
   &.horizontal {

@@ -21,6 +21,14 @@
     position: relative;
     width: 100%;
     margin: 0;
+    padding: 10px;
+    input{
+      width: 400px;
+      margin: 2px;
+      height: 38px;
+      background-color: #cfcece;
+      border-radius: 5px;
+    }
     /* &符號是sass的非變數連接字符，這裡的&.any就是 .row.any的意思 */
     &.horizontal {
       @include flexBox(row);
@@ -76,4 +84,6 @@
     }
   }
   
-  #app {}
+#RegexResult{
+  padding: 20px;
+}

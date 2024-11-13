@@ -4,11 +4,11 @@ const getUrlDomain = (url) => {
     
     const domain=url.replace(regex,'$1');
 
-    return domain
+    return domain;
   }
   
   const printAnswer = () => {
     const url = document.getElementById("url_1").value
-    const resultScope = document.getElementById("result")
+    const resultScope = document.getElementById("RegexResult")
     resultScope.innerHTML = getUrlDomain(url)
   }

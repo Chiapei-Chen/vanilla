@@ -37,7 +37,8 @@ export default defineConfig({
         jsworkday2:resolve(__dirname,"js-work-day-2.html"),
         jsworkday3:resolve(__dirname,"js-work-day-3.html"),
         jsday3dijistra:resolve(__dirname,"js-day-3-dijikstra.html"),
-        jsworkday4:resolve(__dirname,"js-work-day-4.html")
+        jsworkday4:resolve(__dirname,"js-work-day-4.html"),
+        RegexinURLTest:resolve(__dirname,"RegexinURLTest.html")
       },
       output: {
         /* 

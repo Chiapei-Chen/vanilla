@@ -7,8 +7,8 @@ const getUrlDomain = (url) => {
     .replace(/^www\./, "")
     // 移除端口號部分
     .replace(/:[0-9]+/, "")
-    // 移除路徑部分
-    .replace(/\/.*$/, "");
+    //提取網域部分
+    .replace(/^.*?([^.]+\.[^.]+\.[^.]+$|[^.]+\.[^.]+$)/, "$1");
 
   return domain;
 };
